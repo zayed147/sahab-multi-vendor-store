@@ -1,11 +1,410 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>الصفحة الرئيسية</title>
 </head>
+
 <body>
-    
+    <div class="line"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/rasel-logo.png" width="140"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <li class="dropdown mx-5 list-unstyled">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    التصنيفات
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">الاثاث المنزلي</a></li>
+                    <li><a class="dropdown-item" href="#"> الاجهزة الكهربائية</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"> صالات الافراح </a></li>
+                </ul>
+            </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn btn-success mx-5 pt-1 h-25 mt-3">سجل كمورد +</button>
+
+                    <li class="nav-item">
+                        <a class="nav-link active  mt-1 pb-1" aria-cur rent="page" href="#"> <i
+                                class="fas fa-search d-block text-center"></i>البحث</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-1" href="#"><i class="fas fa-heart d-block text-center"></i>المفضلة </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mt-1" href="#"><i class="fas fa-store d-block text-center"></i>سلة
+                            المشتريات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  mt-1" href="#"><i class="fas fa-user d-block text-center"></i>تسجيل
+                            الدخول</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="container shadow">
+            <form class="card-form col-lg-4 col-md-3 col-sm-12">
+
+                <h3 class="text-center">كل المراحب والله</h3>
+                <p class="text-center">ضيفوا البيانات مشان تتمتعوا بالعديد من الميزات</p>
+
+                <div class="mb-3">
+                    <label for="examleInputEmail" class="form-label">رقم الجوال</label>
+                    <input type="text" class="form-control" id="examleInputEmail"
+                        placeholder="ادخل رقم الجوال الخاص بك">
+                </div>
+                <div class="mb-3">
+                    <label for="examleInputEmail" class="form-label"> الاسم بالكامل</label>
+                    <input type="text" class="form-control" id="examleInputEmail" placeholder="ادخل الاسم بالكامل">
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">ارسل</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    `<div class="categories">
+
+        <div class="container">
+            <div class="title-section fw-bold fs-4">
+                اكتشف أصنافنا
+
+                <a class="d-none d-sm-block text-start text-decoration-none fw-bold"
+                    href="https://accord.ps/categories"><span class="title-all-categories text-dark fw-light fs-6">كل
+                        التصنيفات <i class="fa fa-angle-left "></i></span></a>
+            </div>
+
+            <div class="items d-flex overflow-scroll  ">
+                <div class="item text-center  ">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c0.png" width="100">
+                        <label class="text-muted">الأثاث المنزلي</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c1.png" width="100">
+                        <label class="text-muted"> الاجهزة الكهربائية</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c2.png" width="100">
+                        <label class="text-muted"> صالات الافراح</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c3.png" width="100">
+                        <label class="text-muted"> بدل الزفاف</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c4.png" width="100">
+                        <label class="text-muted"> الكوفيرات</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c5.png" width="100">
+                        <label class="text-muted"> بطاقات الأفراح</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c6.png" width="100">
+                        <label class="text-muted"> تزيين الورود</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c7.png" width="100">
+                        <label class="text-muted"> تأجير الباصات</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c8.png" width="100">
+                        <label class="text-muted"> استوديوهات التصوير</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c9.png" width="100">
+                        <label class="text-muted"> المطابخ</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c10.png" width="100">
+                        <label class="text-muted"> الفنادق</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c11.png" width="100">
+                        <label class="text-muted"> فنون استعراضية</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c12.png" width="100">
+                        <label class="text-muted"> المسارح</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c13.png" width="100">
+                        <label class="text-muted"> بدل رجالي</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c14.png" width="100">
+                        <label class="text-muted"> حلويات الافراح</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c15.png" width="100">
+                        <label class="text-muted"> مفروشات</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/c16.png" width="100">
+                        <label class="text-muted"> أدوات منزلية</label>
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="/search?category_id=1" data-action="clicked_category" data-id="1">
+                        <img class="border rounded-circle shadow" src="images/categories.png" width="100">
+                        <label class="text-muted"> كل التصنيفات</label>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="container d-flex justify-content-around mt-5 ">
+
+        <div class="card shadow border-top-1" style="width: 25rem;">
+            <img src="images/acord.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">كورد، القصة، وبناء الثقة</h5>
+                <p class="card-text fw-light">ن، تمتلك أكورد مئات الموردين وآلاف المنتجات التي تملأ المنصة الآن من جميع
+                    التصنيفات التي تهم المقبلين على الزواج بالإضافة ...</p>
+            </div>
+        </div>
+
+        <div class="card shadow" style="width: 25rem;">
+            <img src="images/head.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">الشراكات، الطريق للراحة والتحكم</h5>
+                <p class="card-text fw-light">من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر لدينا، يمكننا
+                    توفير تجربة تسوق أكثر شمولية، ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات ...</p>
+            </div>
+        </div>
+        <div class="card shadow" style="width: 25rem;">
+            <img src="images/seciol.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">المنتجات وقوة موردينا</h5>
+                <p class="card-text fw-light">الأفضل أمام عينك، مع وجود خطة تمكن الفريق من جلب منتجات عديدة بمواصفات
+                    حقيقية، كان لابد من وجود العديد من الاعتبارات التي نأخذها ليكون أحدهم من موردينا ...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+
+        <img src="images/advfdd.jpg" class="img-fluid w-100" alt="..." style="height: 242px; border-radius: 4px;">
+
+    </div>
+
+
+    <div class="container d-flex justify-content-around mt-3 ">
+
+        <div class="card shadow border-top-1" style="width: 25rem;">
+            <img src="images/art1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">كيف تخطط لحفل زفاف بأفضل التكاليف</h5>
+                <p class="card-text fw-light">يحلم الكثير من الشباب بإقامة فرحٍ جميل لا يُنسى، لكن ليس كثيراً منا يستطيع
+                    بسبب السيولة المالية. فالحل الأفضل هو إلقاء نظرة جادة على جميع النفقات المرتبطة بيوم ...</p>
+            </div>
+        </div>
+
+        <div class="card shadow" style="width: 25rem;">
+            <img src="images/art2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">كيف تدفع لحفل زفافك؟ </h5>
+                <p class="card-text fw-light">من المهم أن تفهم كيف سيتم تقسيم ميزانيتك. التوفير في حفل الزفاف ليس
+                    بالمهمة المستعصية. إليك كيفية التوفير والدفع مقابل يوم الفرح عن طريق الإنفاق بذكاء والاقتطاع قليلاً
+                    على طول الطريق ...</p>
+            </div>
+        </div>
+        <div class="card shadow" style="width: 25rem;">
+            <img src="images/art3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold"> 10 نصائح لشراء منتجات واختيار الخدمات لفرحك</h5>
+                <p class="card-text fw-light">إذا كنت ترغب في شراء عفش لمنزلك او إختيار صالة او مسرح لسهرة الشباب، فهناك
+                    بعض الأشياء التي يجب مراعاتها قبل الإقدام على عملية الشراء ...</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container d-flex justify-content-around mt-3 ">
+
+        <div class="card shadow border-top-1" style="width: 25rem;">
+            <img src="images/temporary-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold text-center">باقات أفراح صيف 2023 </h5>
+            </div>
+        </div>
+
+        <div class="card shadow" style="width: 25rem;">
+            <img src="images/individual-offers.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold text-center"> أحدث العروض </h5>
+            </div>
+        </div>
+        <div class="card shadow" style="width: 25rem;">
+            <img src="images/individual-offers.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fw-bold text-center">العروض الفردية</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="line mt-3"></div>
+
+
+
+
+    <div class="container pt-3">
+        <div class="row  justify-content-between ">
+
+            <div class="col-3">
+                <h4 class="text-end text-bold">للاتصال بنا </h4>
+                <p class="text-end"> يسرنا تواصلك معنا من خلال أي من القنوات المتاحة. </p>
+                <div class="row">
+                    <div class="col-6 text-end">
+
+                        <p>أرقام التواصل</p>
+                        <span> 1700400600</span>
+                        <p>العنوان</p>
+                        <p>فلسطين، غزة، مقابل البوابة الشمالية لجامعة الأزهر، مجمع الرؤيا التجاري</p>
+
+                    </div>
+                    <div class="col-6">
+
+                        <h4 class="fs-5 d-block text-end"> البريد الإلكتروني </h4>
+                        <p class="text-end"> info@accord.ps </p>
+
+                        <p>ساعات العمل</p>
+
+                        <p>السبت - الخميس
+                            9:00 صباحاً - 3:30 مساءً</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-3 text-end  h-100">
+                <h4>المعلومات</h4>
+                <ul class="list-unstyled">
+                    <li>من نحن ؟</li>
+                    <li>سياسة الخصوصية</li>
+                    <li>للاتصال بنا</li>
+                    <li>الأسئلة الشائعة</li>
+                    <li>مورد جديد</li>
+
+                </ul>
+            </div>
+            <div class="col-3 text-end  h-100">
+                <h4>الملف الشخصي</h4>
+                <ul class="list-unstyled">
+                    <li>التسجيل</li>
+                    <li> تسجيل الدخول</li>
+                    <li> المفضلة</li>
+                    <li> سلة المشتريات</li>
+                    <li> البحث</li>
+
+                </ul>
+            </div>
+            <div class="col-3 text-end">
+                <h4>قائمة الواتس اب</h4>
+                <p>انضم إلى قائمة الواتس أب الخاصة بالمنصة للبقاء على إطلاع بأحدث الخصومات والعروض الخاصة. </p>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="رقم الواتس اب ...."
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <button type="button " class="btn btn-primary mx-1">الأشتراك</button>
+                </div>
+                <p> وسائل التواصل الإجتماعي </p>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram "></i>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="fw-light">
+                    Powered by Accord - Accord Group for Marketing & Trade
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
 </body>
+
 </html>

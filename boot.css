@@ -1,0 +1,36 @@
+body{
+    background-color: #f9f7f6;
+}
+.line{
+    border: 0;
+    margin-top: 0;
+    height: 8px;
+    background: -webkit-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: linear-gradient(to right, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+}
+
+
+.main {
+    background-image: url('images/slider-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    position: relative;
+}
+
+
+
+.card-form{
+    box-shadow: 1px 2px 3px;
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    left: 211px;
+    width: 354px;
+}
+
+
+
